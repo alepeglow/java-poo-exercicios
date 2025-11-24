@@ -1,0 +1,59 @@
+package br.com.godev.exerciciospoo;
+
+/**
+ * Classe que representa um Produto.
+ * Contém informações básicas de um produto comercializado.
+ */
+public class Produto {
+    private int codigo;
+    private String nome;
+    private double preco;
+
+    /**
+     * Construtor completo da classe Produto.
+     * 
+     * @param codigo Código identificador do produto
+     * @param nome Nome do produto
+     * @param preco Preço unitário do produto
+     */
+    public Produto(int codigo, String nome, double preco) {
+        this.codigo = codigo;
+        this.nome = nome;
+        this.preco = preco;
+    }
+
+    // Getters e Setters
+    public int getCodigo() {
+        return codigo;
+    }
+
+    public void setCodigo(int codigo) {
+        this.codigo = codigo;
+    }
+
+    public String getNome() {
+        return nome;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public double getPreco() {
+        return preco;
+    }
+
+    public void setPreco(double preco) {
+        this.preco = preco;
+    }
+
+    @Override
+    public String toString() {
+        return "Produto{" +
+                "codigo=" + codigo +
+                ", nome='" + nome + '\'' +
+                ", preco=" + preco +
+                '}';
+    }
+}
+
